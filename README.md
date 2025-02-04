@@ -54,4 +54,16 @@ restoredClient, _ := stealthclient.DeserializeClient(data)
 restoredClient.RotateSmartProxySession("new_session_id")
 ```
 
+### Custom Header
+
+```go
+client, err := stealthy.NewStealthClient(
+		stealthy.WithCustomHeaders(map[string]string{
+			"Accept-Language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7",
+			"X-Custom-Header": "abc",
+			"Authorization":   "Bearer my_token_123",
+		}),
+	)
+```
+
  
