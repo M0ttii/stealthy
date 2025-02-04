@@ -1,3 +1,3 @@
-module github.com/m0ttii/stealthy
+module github.com/M0ttii/stealthy
 
 go 1.23
